@@ -1,0 +1,1001 @@
+body {
+        background-color: #f3f8ff;
+        color: #2c4a63;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      .font-display {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+        color: #234e70;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .nav-item > a {
+        font-size: 14px;
+      }
+
+      .navbar {
+        background-color: rgb(252, 252, 252, 0.8) !important;
+        padding: 10px 30px;
+        box-shadow: 0 2px 12px #749fc433;
+      }
+
+      .navbar-brand img {
+        transition: 0.3s ease;
+      }
+
+      .navbar-brand img:hover {
+        transform: scale(1.08);
+      }
+
+      .navbar-nav {
+        gap: 8px;
+      }
+
+      .navbar-nav .nav-link {
+        color: #5b8db8;
+        font-weight: 500;
+        padding: 10px 16px !important;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+      }
+
+      .navbar-nav .nav-link:hover {
+        background-color: #cfe5fa;
+        color: #3f6f98;
+        transform: translateY(-2px);
+      }
+
+      .navbar-nav .nav-link.active {
+        background-color: #a9d0f5;
+        color: #315f87;
+        border-radius: 25px;
+        font-weight: 600;
+      }
+
+      .nav-item > .nav-link:hover .active {
+        color: #3f6f98 !important;
+        border-bottom: 2px solid #5b9bd5;
+      }
+
+      .navbar-toggler {
+        border: 2px solid #87b8e5;
+        border-radius: 10px;
+      }
+
+      .navbar-toggler:focus {
+        box-shadow: 0 0 0 3px rgba(135, 184, 229, 0.25);
+      }
+
+      .navbar .btn-danger {
+        background-color: #e63946 !important;
+        border-color: #e63946 !important;
+        color: white !important;
+      }
+
+      .navbar .btn-danger:hover {
+        background-color: #c92f3b !important;
+        border-color: #c92f3b !important;
+        color: white !important;
+      }
+
+      .hero-section .btn-danger {
+        background-color: #e63946 !important;
+        border-color: #e63946 !important;
+        color: white !important;
+      }
+
+      .hero-section .btn-danger:hover {
+        background-color: #c92f3b !important;
+        border-color: #c92f3b !important;
+      }
+
+      .btn-light {
+        background-color: #ffffff !important;
+        color: #4a78a0 !important;
+        border-color: #b9d7f2 !important;
+      }
+
+      .btn-light:hover {
+        background-color: #e5f2ff !important;
+        color: #315f87 !important;
+      }
+
+      .hero-section {
+        position: relative;
+        overflow: hidden;
+        padding: 4rem 0 5rem;
+        background: linear-gradient(
+          135deg,
+          #eaf5ff 0%,
+          #d7ecff 50%,
+          #f3f8ff 100%
+        );
+      }
+
+      .text-content h1 {
+        font-size: 3rem;
+        line-height: 1.12;
+      }
+
+      .hero-section h1 {
+        font-size: 3rem;
+        line-height: 1.12;
+        color: #234e70;
+      }
+
+      .hero-section h1 span {
+        color: #3f8edb !important;
+      }
+
+      .hero-section p {
+        max-width: 36rem;
+        color: #52728d !important;
+        line-height: 1.8;
+      }
+
+      .action {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .action .btn {
+        font-weight: 700;
+        padding: 12px 24px;
+        border-radius: 15px;
+      }
+
+      .hero-image-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero-pod {
+        position: absolute;
+        inset: 1rem;
+        background: linear-gradient(
+          180deg,
+          #ffffff 0%,
+          #eaf5ff 60%,
+          #d6ebff 100%
+        );
+        border-radius: 44px;
+        box-shadow: 0 14px 28px -6px rgba(70, 130, 180, 0.18);
+        border: 4px solid #ffffff;
+        transform: rotate(2deg);
+      }
+
+      .hero-image-wrapper img {
+        position: relative;
+        z-index: 1;
+      }
+
+      @keyframes floatMascot {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+
+        50% {
+          transform: translateY(-10px) rotate(1.5deg);
+        }
+      }
+
+      .animate-mascot {
+        animation: floatMascot 4.5s ease-in-out infinite;
+      }
+
+      .trust-bar {
+        padding: 2rem 0;
+        background-color: #f3f8ff;
+        border-top: 1px solid #cfe5fa;
+        border-bottom: 1px solid #cfe5fa;
+      }
+
+      .trust-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        background-color: #d7ecff;
+        color: #3f8edb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 991px) {
+        .navbar-nav {
+          gap: 5px;
+          margin-top: 15px;
+        }
+
+        .navbar-nav .nav-link {
+          text-align: center;
+        }
+
+        .hero-section {
+          padding: 3rem 0;
+        }
+
+        .text-content h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero-section h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero-section .col-lg-7 {
+          text-align: center;
+        }
+
+        .hero-section p {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .action {
+          justify-content: center;
+        }
+
+        .hero-image-wrapper {
+          margin-top: 40px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .text-content h1 {
+          font-size: 2rem;
+        }
+
+        .hero-section h1 {
+          font-size: 2rem;
+        }
+      }
+
+      /* =========================
+   KATEGORI
+========================= */
+
+      .kategori-card {
+        background: #ffffff;
+        border: 1px solid #cfe5fa;
+        border-radius: 24px;
+        padding: 1.5rem 1rem;
+        text-align: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        height: 100%;
+      }
+
+      .kategori-card:hover {
+        box-shadow: 0 14px 28px -6px rgba(91, 155, 213, 0.2);
+        transform: translateY(-3px);
+      }
+
+      .kategori-icon {
+        width: 64px;
+        height: 64px;
+        margin: 0 auto 1rem;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #eaf5ff;
+        transition: transform 0.3s ease;
+      }
+
+      .kategori-icon img {
+        width: 42px;
+        height: 42px;
+        object-fit: contain;
+      }
+
+      .kategori-card:hover .kategori-icon {
+        transform: scale(1.1);
+      }
+
+      .kategori-card h3 {
+        color: #234e70;
+      }
+
+      .kategori-card p {
+        color: #52728d !important;
+      }
+
+      /* ==================== BEST SELLER ==================== */
+
+.bestseller-section {
+    padding: 4rem 0;
+    background-color: #F3F8FF;
+    border-top: 1px solid #D6EAFB;
+    border-bottom: 1px solid #D6EAFB;
+}
+
+
+/* PRODUCT CARD */
+
+.product-card {
+    background-color: #FFFFFF;
+    border: 1px solid #CFE5FA;
+    border-radius: 24px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 14px 28px -6px rgba(87, 153, 210, 0.18);
+    transform: translateY(-4px);
+}
+
+
+/* GAMBAR PRODUK */
+
+.product-img-wrap {
+    position: relative;
+    height: 220px;
+    background-color: #EAF5FF;
+    border: 1px solid #D6EAFB;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+/* GAMBAR */
+
+.product-icon,
+.product-img-wrap img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-icon,
+.product-card:hover .product-img-wrap img {
+    transform: scale(1.05);
+}
+
+
+/* TAG PRODUK */
+
+.product-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #3F6F98;
+    border: 1px solid #CFE5FA;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.product-tag .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #3F8EDB;
+}
+
+
+/* TAG MINUMAN */
+
+.product-tag.green {
+    color: #3F6F98;
+}
+
+.product-tag.green .dot {
+    background-color: #69A9DC;
+}
+
+
+/* FOOTER PRODUK */
+
+.product-footer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(207, 229, 250, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* HARGA */
+
+.product-footer .fw-bold {
+    color: #234E70 !important;
+}
+
+
+/* TOMBOL PESAN */
+
+.product-footer .btn-danger {
+    background-color: #E63946 !important;
+    border-color: #E63946 !important;
+    color: #FFFFFF !important;
+}
+
+.product-footer .btn-danger:hover {
+    background-color: #C92F3B !important;
+    border-color: #C92F3B !important;
+}
+
+
+/* JUDUL BEST SELLER */
+
+.bestseller-section h2 {
+    color: #234E70;
+}
+
+.bestseller-section .text-danger {
+    color: #3F8EDB !important;
+}
+
+.bestseller-section .text-secondary {
+    color: #52728D !important;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .product-img-wrap {
+        height: 190px;
+    }
+
+    .product-icon,
+    .product-img-wrap img {
+        width: 165px;
+        height: 165px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .product-card {
+        padding: 1rem;
+        border-radius: 20px;
+    }
+
+    .product-img-wrap {
+        height: 160px;
+    }
+
+    .product-icon,
+    .product-img-wrap img {
+        width: 140px;
+        height: 140px;
+    }
+
+}
+
+/* ==================== TENTANG ==================== */
+
+.tentang-section {
+    padding: 4rem 0;
+}
+
+.tentang-card {
+    background-color: #F3F8FF;
+    border: 1px solid #CFE5FA;
+    border-radius: 36px;
+    padding: 3rem 2rem;
+    box-shadow: 0 14px 28px -6px rgba(87, 153, 210, 0.18);
+}
+
+.mascot-bedge-circel {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* ==================== TESTIMONI ==================== */
+.testimoni-section {
+    padding: 4rem 0;
+    background-color: #F3F8FF;
+    border-top: 1px solid #D7EAF8;
+    border-bottom: 1px solid #D7EAF8;
+}
+
+.testi-card {
+    background-color: #FFFFFF;
+    border: 1px solid #CFE5FA;
+    border-radius: 24px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.testi-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: #CFE5FA;
+    color: #3F6F98;
+}
+
+.testi-avatar.cream {
+    background-color: #EAF5FF;
+    color: #2C4A63;
+}
+
+/* ==================== GALERI SAVORA ==================== */
+
+.galeri-section {
+    padding: 4rem 0;
+    background-color: #F3F8FF;
+}
+
+
+/* ==================== JUDUL ==================== */
+
+.galeri-label {
+    color: #3F8EDB;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.galeri-section h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: #234E70;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.galeri-section h2 span {
+    color: #3F8EDB;
+}
+
+.galeri-section p {
+    color: #52728D;
+    font-size: 0.95rem;
+}
+
+
+/* ==================== KOTAK FOTO ==================== */
+
+.galeri-card {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #EAF5FF;
+    border: 1px solid #D8EAF8;
+    box-shadow: 0 5px 15px rgba(63, 142, 219, 0.10);
+}
+
+
+/* FOTO */
+
+.galeri-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+/* EFEK HOVER SEDERHANA */
+
+.galeri-card:hover img {
+    transform: scale(1.03);
+}
+
+
+/* ==================== SOSIAL MEDIA SAVORA ==================== */
+
+.savora-social {
+    margin-top: 3rem;
+}
+
+.savora-social h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #234E70;
+    margin-bottom: 8px;
+}
+
+.savora-social p {
+    color: #52728D;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+
+/* LINK SOSIAL MEDIA */
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 11px 18px;
+    background-color: #FFFFFF;
+    border: 1px solid #CFE5FA;
+    border-radius: 12px;
+    color: #3F6F98;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+
+/* ICON */
+
+.social-link i {
+    font-size: 1.1rem;
+}
+
+
+/* EFEK HOVER */
+
+.social-link:hover {
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+
+/* INSTAGRAM */
+
+.instagram-link:hover {
+    background-color: #3F8EDB;
+    border-color: #3F8EDB;
+}
+
+
+/* TIKTOK */
+
+.tiktok-link:hover {
+    background-color: #234E70;
+    border-color: #234E70;
+}
+
+
+/* WHATSAPP */
+
+.whatsapp-link:hover {
+    background-color: #3F8EDB;
+    border-color: #3F8EDB;
+}
+
+
+/* SHOPEEFOOD */
+
+.shopee-link:hover {
+    background-color: #E63946;
+    border-color: #E63946;
+}
+
+/* ==================== CTA ==================== */
+
+.cta-section {
+    padding: 4rem 0;
+}
+
+.cta-box {
+    background: linear-gradient(
+        135deg,
+        #DDEEFF 0%,
+        #CFE7FA 100%
+    );
+
+    border-radius: 36px;
+    padding: 3rem 2rem;
+
+    color: #294E70;
+
+    box-shadow: 0 14px 28px -6px rgba(80, 140, 190, 0.18);
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Judul CTA */
+.cta-box h2 {
+    color: #234B70 !important;
+}
+
+/* Deskripsi */
+.cta-box p {
+    color: #5B7892 !important;
+}
+
+/* Tombol */
+.cta-box .btn {
+    background-color: #FFFFFF;
+    color: #416A8E !important;
+    border: 1px solid #C5DFF3;
+    transition: 0.3s ease;
+}
+
+.cta-box .btn:hover {
+    background-color: #5B9FE3;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+}
+
+/* Efek lingkaran */
+.cta-box::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    width: 256px;
+    height: 256px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    filter: blur(40px);
+    pointer-events: none;
+}
+
+/* ==================== FOOTER SAVORA ==================== */
+
+.footer-savora {
+    background: #F5FAFE;
+    color: #294E70;
+    padding: 4.5rem 0 1.5rem;
+    border-top: 1px solid #DCEAF5;
+}
+
+
+/* ==================== BRAND ==================== */
+
+.footer-brand {
+    color: #294E70;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.footer-logo span {
+    color: #5B9FE3;
+}
+
+.footer-brand small {
+    display: block;
+    color: #7891A7;
+    font-size: 0.78rem;
+    margin-top: 5px;
+}
+
+.footer-description {
+    max-width: 390px;
+    color: #627D95;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+
+/* ==================== JAM OPERASIONAL ==================== */
+
+.footer-hours {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 16px;
+
+    background: #FFFFFF;
+    border: 1px solid #DCEAF5;
+    border-radius: 14px;
+
+    box-shadow: 0 5px 15px rgba(65, 106, 142, 0.06);
+}
+
+.footer-hours > i {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #E4F2FD;
+    color: #5B9FE3;
+
+    border-radius: 10px;
+}
+
+.footer-hours strong {
+    display: block;
+    font-size: 0.82rem;
+    color: #294E70;
+}
+
+.footer-hours span {
+    display: block;
+    font-size: 0.8rem;
+    color: #7891A7;
+    margin-top: 2px;
+}
+
+
+/* ==================== TITLE ==================== */
+
+.footer-title {
+    color: #294E70;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+
+/* ==================== LINKS ==================== */
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.footer-links a {
+    color: #6A849B;
+    text-decoration: none;
+    font-size: 0.9rem;
+
+    transition: all 0.25s ease;
+}
+
+.footer-links a:hover {
+    color: #4B91CE;
+    padding-left: 5px;
+}
+
+
+/* ==================== KONTAK ==================== */
+
+.footer-contact-text {
+    color: #6A849B;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+
+/* ==================== SOCIAL MEDIA ==================== */
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.social-btn {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #FFFFFF;
+    color: #4B91CE;
+
+    border: 1px solid #D5E7F5;
+    border-radius: 13px;
+
+    text-decoration: none;
+
+    box-shadow: 0 5px 15px rgba(65, 106, 142, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background: #5B9FE3;
+    color: #FFFFFF;
+    border-color: #5B9FE3;
+    transform: translateY(-3px);
+}
+
+
+/* ==================== FOOTER ==================== */
+
+.footer-savora {
+    background-color: #F3F8FF;
+    border-top: 1px solid #CFE5FA;
+    padding: 4rem 0 3rem;
+}
+
+.footer-savora h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #234E70;
+}
+
+.footer-savora a {
+    color: #5B8DB8;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: color 0.2s ease;
+}
+
+.footer-savora a:hover {
+    color: #E63946;
+}
+
+.footer-savora .text-secondary {
+    color: #52728D !important;
+}
+
+.footer-savora .font-display {
+    font-family: 'Quicksand', sans-serif;
+    color: #234E70;
+}
+
+.social-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #CFE5FA;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #2C6FA5 !important;
+    transition: 0.2s ease;
+}
+
+.social-btn:hover {
+    background-color: #E63946;
+    border-color: #E63946;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+}
+  
